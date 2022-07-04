@@ -14,7 +14,7 @@ for coin in money:
    if tot // coin > 0:
       count.append(tot//coin)
       tot -= coin * (tot//coin)
-   else: break
+   else: pass
 
 print(count) #금액 별 사용 갯수
 print(sum(count)) #총 동전 사용 갯수
