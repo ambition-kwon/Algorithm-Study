@@ -3,7 +3,7 @@
 #한 문제를 여러개의 작은 문제로 나누어 큰 문제를 해결하는 방법
 #이때, 결과로 나온 값을 캐싱(메모이제이션)하여 시간속도 단축
 #분할정복과의 차이 : 부분 문제 간 중복 여부
-#Top-Down(재귀) / Bottom-Up(반복)(정석) 2개로 구현 가능
+#Top-Down(재귀) / Bottom-Up(반복) 2가지로 구현 가능
 
 #Top-Down(재귀)
 number = 100
@@ -18,7 +18,7 @@ def top_down_fibo(num, memo):
 
 print(top_down_fibo(number, memo))
 
-#Bottom-Up(반복)(정석)
+#Bottom-Up(반복)
 memo = [0] * (number+1)
 def bottom_up_fibo(num, memo):
 	memo[1] = memo[2] = 1
